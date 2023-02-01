@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700");
+*{
+  box-sizing:border-box;
+  padding:0;
+}
+
+
+body{
+  margin:0px;
+  font-family:'Lato';
+  background-color:#673AB7;
+}
+
+
+      button{
+        border:0px;
+        background: rgba(0,0,0,0);
+        cursor:pointer;
+        svg{
+          transition:all .3s;
+          fill:white;
+          width:30px;
+          &:hover{
+            filter:brightness(60%); 
+          }
+          &:active{
+            filter:brightness(20%);
+          }
+        }
+      }
+
+
+.main{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+  width:100vw;
+
+  
+  .container {
+    width:65%;
+    height:90%;
+    text-align:center;
+    padding:15px;;
+    color:white;
+    border:2px solid #BDBDBD;
+    border-radius:10px;
+    
+    
+    h1{
+      font-size:40px;
+      margin-bottom:40px;
+    }
+    .label-container{
+      display:flex;
+      justify-content:space-evenly;
+      h2{
+        font-size:22px;
+      }
+      p{
+        font-size:22px;
+        font-weight:bold;
+        margin:10px;
+      }
+
+    }
+    
+    .timer-container{
+      p{
+        font-size:38px;
+        font-weight:bold;
+        margin-top:10px;
+        margin-bottom:30px;
+      }
+    }
+    
+    .controls-container{
+      button{
+        margin:10px;
+      }
+    }
+    
+    
+  }
+}
